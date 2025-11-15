@@ -21,3 +21,38 @@
   .btn{display:inline-block;margin-top:.5rem;padding:.4rem .7rem;border-radius:.5rem;background:var(--accent);color:white;text-decoration:none}
   footer{padding:1.25rem 0;text-align:center;color:#6b7280}
   
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.hero-text .highlight {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.btn, .btn-outline {
+    margin-right: 12px;
+    margin-top: 12px;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+}

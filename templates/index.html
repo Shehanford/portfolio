@@ -33,4 +33,24 @@
     {% endfor %}
   </ul>
 </section>
+<section id="hero" class="hero">
+    <div class="container hero-grid">
+      
+      <div class="hero-image">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" 
+             alt="Profile Picture" class="profile-pic" />
+      </div>
+  
+      <div class="hero-text">
+        <h2>Hello, I'm <span class="highlight">{{ content.name }}</span></h2>
+        <p class="hero-sub">{{ content.title }}</p>
+        <p>{{ content.about }}</p>
+  
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="/resume" class="btn-outline">Download CV</a>
+      </div>
+  
+    </div>
+  </section>
+  
 {% endblock %}

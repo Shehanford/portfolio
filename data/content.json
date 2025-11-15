@@ -1,21 +1,42 @@
 {
-    "name": "Shehan Roshantha",
-    "title": "Associate – F&A | BSc Software Engineering (reading)",
-    "about": "Finance professional with BBA (Second Class Upper). Blending accounting and software skills; experienced with SAP, Wise Cloud, reconciliations, and month-end processes.",
-    "contact": {
-      "email": "shehanrford@gmail.com",
-      "phone": "+947705246616",
-      "location": "Wattala, Sri Lanka",
-      "linkedin": "https://linkedin.com/in/shehan-roshantha-90811b312"
+  "name": "Shehan Roshantha",
+  "title": "Finance & Software Engineering Graduate",
+  "about": "A motivated finance and software engineering professional blending accounting, data analysis, and software development. Passionate about building clean, interactive web solutions and applying analytics in business environments.",
+  "skills": [
+    "Python",
+    "Flask",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Accounting",
+    "Data Analysis"
+  ],
+  "projects": [
+    {
+      "title": "Budget Automation",
+      "desc": "Python-based automation for generating monthly budget reports.",
+      "link": "#"
     },
-    "skills": ["Accounting", "SAP", "Wise Cloud", "Python (learning)", "Excel"],
-    "projects": [
-      {"title": "Budget Automation (sample)", "desc": "Automated monthly budget report using Python scripts and Excel templates.", "link": "#"},
-      {"title": "Plant Disease CNN (research)", "desc": "Research on plant disease prediction using CNNs (proposal stage).", "link": "#"}
-    ],
-    "experience": [
-      {"role": "Associate – F&A", "org": "WNS Global Services", "date": "Mar 2025 – Present"},
-      {"role": "Finance Trainee", "org": "Resus Energy PLC", "date": "Aug 2024 – Feb 2025"}
-    ]
+    {
+      "title": "Plant Disease CNN Model",
+      "desc": "Convolutional Neural Network (CNN) project for identifying plant diseases.",
+      "link": "#"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Associate – F&A",
+      "org": "WNS Global Services",
+      "date": "Mar 2025 – Present"
+    },
+    {
+      "role": "Finance Trainee",
+      "org": "Resus Energy PLC",
+      "date": "Aug 2024 – Feb 2025"
+    }
+  ],
+  "contact": {
+    "email": "shehanrford@gmail.com",
+    "location": "Wattala, Sri Lanka"
   }
-  
+}
