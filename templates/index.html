@@ -1,52 +1,113 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section class="hero">
-    <div class="container hero-grid">
-
-        <div class="hero-img">
-            <img src="{{ url_for('static', filename='images/profile.jpg') }}" class="profile-pic">
-        </div>
-
-        <div class="hero-text fade">
-            <h2>Hello, I'm <span class="highlight">{{ content.name }}</span></h2>
-            <p class="sub">{{ content.title }}</p>
-            <p>{{ content.about }}</p>
-            <a href="#projects" class="btn">View Projects</a>
-        </div>
-
+<!-- HERO -->
+<section class="hero container">
+  <div class="hero-grid">
+    <div class="hero-card">
+      <img class="hero-pic" src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile">
     </div>
+
+    <div class="hero-text fade">
+      <h2>Hello, I'm <span class="accent">{{ content.name }}</span></h2>
+      <p class="lead">{{ content.title }}</p>
+      <p>{{ content.about }}</p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn btn-outline" href="/resume" target="_blank">Download CV</a>
+      </div>
+
+      <ul class="contact-inline">
+        <li>📧 <a href="mailto:{{ content.contact.email }}">{{ content.contact.email }}</a></li>
+        <li>📍 {{ content.contact.location }}</li>
+        <li>📞 {{ content.contact.phone }}</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
+<!-- ABOUT / SKILLS -->
 <section id="about" class="container section fade">
-    <h2>Skills</h2>
-    <div class="skills">
-        {% for s in content.skills %}
-        <span class="skill">{{ s }}</span>
-        {% endfor %}
-    </div>
+  <h3>Skills</h3>
+  <div class="skills">
+    {% for s in content.skills %}
+      <span class="tag">{{ s }}</span>
+    {% endfor %}
+  </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects" class="container section fade">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-        {% for p in content.projects %}
-        <div class="card">
-            <h3>{{ p.title }}</h3>
-            <p>{{ p.desc }}</p>
-            <a href="{{ p.link }}" class="btn-small">View</a>
-        </div>
-        {% endfor %}
-    </div>
+  <h3>Projects</h3>
+  <div class="projects-grid">
+    {% for p in content.projects %}
+      <article class="project-card" data-proj="{{ p.id }}">
+        <h4>{{ p.title }}</h4>
+        <p class="muted">{{ p.short }}</p>
+        <button class="btn-small js-open-project" data-id="{{ p.id }}">Details</button>
+      </article>
+    {% endfor %}
+  </div>
 </section>
 
+<!-- Experience -->
 <section id="experience" class="container section fade">
-    <h2>Experience</h2>
-    <ul>
-        {% for e in content.experience %}
-        <li><strong>{{ e.role }}</strong> — {{ e.org }} ({{ e.date }})</li>
-        {% endfor %}
-    </ul>
+  <h3>Experience</h3>
+  <div class="timeline">
+    {% for e in content.experience %}
+      <div class="timeline-item">
+        <div class="ti-head">
+          <strong>{{ e.role }}</strong> • {{ e.org }}
+          <span class="ti-date">{{ e.date }}</span>
+        </div>
+        <div class="ti-body">{{ e.details }}</div>
+      </div>
+    {% endfor %}
+  </div>
 </section>
+
+<!-- Contact -->
+<section id="contact" class="container section fade">
+  <h3>Contact</h3>
+  <div class="contact-grid">
+    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <!-- Replace the action above with your Formspree endpoint or your server endpoint -->
+      <label>
+        <span>Your name</span>
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        <span>Your email</span>
+        <input type="email" name="_replyto" required>
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button class="btn" type="submit">Send message</button>
+    </form>
+
+    <div class="contact-card">
+      <h4>Get in touch</h4>
+      <p>Email: <a href="mailto:{{ content.contact.email }}">{{ content.contact.email }}</a></p>
+      <p>LinkedIn: <a href="{{ content.contact.linkedin }}" target="_blank">Profile</a></p>
+      <p>Phone: {{ content.contact.phone }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- Project Modal (hidden by default) -->
+<div id="project-modal" class="modal" aria-hidden="true">
+  <div class="modal-inner">
+    <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<!-- Inline small JSON with projects for modal use -->
+<script type="application/json" id="__projects">
+  {{ content.projects | tojson }}
+</script>
 
 {% endblock %}
