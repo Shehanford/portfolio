@@ -1,0 +1,23 @@
+:root {
+    --bg: #f7f8fb;
+    --card: #ffffff;
+    --accent: #2563eb;
+    --text: #111827;
+  }
+  *{box-sizing:border-box}
+  body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);margin:0;line-height:1.5}
+  .container{max-width:1000px;margin:0 auto;padding:2rem}
+  .site-header{background:var(--card);box-shadow:0 1px 6px rgba(0,0,0,.06);position:sticky;top:0;z-index:20}
+  .site-header .container{display:flex;align-items:center;justify-content:space-between}
+  .brand{margin:0;font-size:1.125rem}
+  .tagline{margin:0;color:#6b7280}
+  .nav a{margin-left:1rem;text-decoration:none;color:var(--accent)}
+  .hero{padding:4rem 0;text-align:center;background:linear-gradient(90deg,#eef2ff,transparent)}
+  .skills{display:flex;gap:.5rem;flex-wrap:wrap;list-style:none;padding:0;margin:1rem 0}
+  .skills li{background:var(--card);padding:.5rem .75rem;border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+  .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+  .project{background:var(--card);padding:1rem;border-radius:.75rem;box-shadow:0 6px 20px rgba(16,24,40,0.04);transition:transform .18s}
+  .project:hover{transform:translateY(-6px)}
+  .btn{display:inline-block;margin-top:.5rem;padding:.4rem .7rem;border-radius:.5rem;background:var(--accent);color:white;text-decoration:none}
+  footer{padding:1.25rem 0;text-align:center;color:#6b7280}
+  

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="hero" class="hero">
+  <div class="container">
+    <h2>Hello — I'm {{ content.name }}.</h2>
+    <p>{{ content.about }}</p>
+  </div>
+</section>
+
+<section id="about" class="container">
+  <h3>Skills</h3>
+  <ul class="skills">
+    {% for s in content.skills %}
+      <li>{{ s }}</li>
+    {% endfor %}
+  </ul>
+
+  <h3 id="projects">Projects</h3>
+  <div class="projects">
+    {% for p in content.projects %}
+      <article class="project">
+        <h4>{{ p.title }}</h4>
+        <p>{{ p.desc }}</p>
+        <a href="{{ p.link }}" class="btn">View</a>
+      </article>
+    {% endfor %}
+  </div>
+
+  <h3 id="experience">Experience</h3>
+  <ul class="experience">
+    {% for e in content.experience %}
+      <li><strong>{{ e.role }}</strong>, {{ e.org }} — {{ e.date }}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}
