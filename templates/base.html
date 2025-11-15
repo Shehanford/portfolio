@@ -1,31 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ content.name }} | Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ content.name }} — Portfolio</title>
+
+  <!-- Favicons (optional) -->
+  <link rel="icon" href="{{ url_for('static', filename='images/profile.jpg') }}" />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <meta name="description" content="{{ content.about }}">
 </head>
-
 <body>
-
-    <header class="header">
-        <div class="container flex between">
-            <h1 class="logo">{{ content.name }}</h1>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="/resume">Resume</a>
-            </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="brand-avatar" src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile">
+        <div class="brand-info">
+          <h1 class="name">{{ content.name }}</h1>
+          <p class="title">{{ content.title }}</p>
         </div>
-    </header>
+      </div>
 
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="/resume" target="_blank" rel="noopener">Resume</a>
+        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
     {% block content %}{% endblock %}
+  </main>
 
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <footer class="footer">
+    <div class="container">
+      <div>© {{ content.name }} • {{ content.contact.location }}</div>
+      <div>Built with Flask • <a href="{{ content.contact.linkedin }}" target="_blank">LinkedIn</a></div>
+    </div>
+  </footer>
 
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
-
 </html>
