@@ -1,42 +1,40 @@
 {
   "name": "Shehan Roshantha",
-  "title": "Finance & Software Engineering Graduate",
-  "about": "A motivated finance and software engineering professional blending accounting, data analysis, and software development. Passionate about building clean, interactive web solutions and applying analytics in business environments.",
-  "skills": [
-    "Python",
-    "Flask",
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Accounting",
-    "Data Analysis"
-  ],
+  "title": "Associate – F&A | BSc (Hons) Software Engineering (reading)",
+  "about": "Finance professional with a BBA (Second Class Upper) and hands-on experience in accounting, financial reporting and ERP systems (SAP). Skilled in reconciliations, month-end close, Wise Cloud and process improvements. I combine finance domain knowledge with software skills to automate workflows and build data-driven tools.",
+  "skills": ["Accounting","Financial Reporting","SAP","Wise Cloud","Python","Flask","Excel","Data Analysis"],
   "projects": [
     {
-      "title": "Budget Automation",
-      "desc": "Python-based automation for generating monthly budget reports.",
-      "link": "#"
+      "id": "proj-1",
+      "title": "Budget Automation Script",
+      "short": "Automates monthly budget consolidation and generates Excel reports.",
+      "detail": "Built Python scripts to parse CSV exports, reconcile budget lines and populate formatted Excel reports for management review. Reduced manual time by ~60%."
     },
     {
-      "title": "Plant Disease CNN Model",
-      "desc": "Convolutional Neural Network (CNN) project for identifying plant diseases.",
-      "link": "#"
+      "id": "proj-2",
+      "title": "Plant Disease CNN (Research)",
+      "short": "Prototype CNN for plant disease identification using image datasets.",
+      "detail": "Research-stage prototype using convolutional neural networks to classify leaf images. Prepared dataset, trained model, evaluated performance and documented next steps for deployment."
     }
   ],
   "experience": [
     {
-      "role": "Associate – F&A",
+      "role": "Associate – Finance & Accounting (F&A)",
       "org": "WNS Global Services",
-      "date": "Mar 2025 – Present"
+      "date": "Mar 2025 – Present",
+      "details": "Process and validate financial transactions, use Wise Cloud for real-time financial management, support month-end close, and collaborate cross-functionally to improve controls."
     },
     {
       "role": "Finance Trainee",
       "org": "Resus Energy PLC",
-      "date": "Aug 2024 – Feb 2025"
+      "date": "Aug 2024 – Feb 2025",
+      "details": "Managed payments, used SAP for recording transactions, assisted with reconciliations and month-end processes."
     }
   ],
   "contact": {
     "email": "shehanrford@gmail.com",
-    "location": "Wattala, Sri Lanka"
+    "phone": "+947705246616",
+    "location": "Wattala, Sri Lanka",
+    "linkedin": "https://linkedin.com/in/shehan-roshantha-90811b312"
   }
 }
