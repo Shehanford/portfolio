@@ -8,7 +8,7 @@
       "id": "proj-1",
       "title": "Restaurant Management System (Java/Web)",
       "short": "A comprehensive web-based system for managing dine-in and delivery reservations with robust multi-level access controls.",
-      "detail": "<h4>Technologies Used:</h4> <p>Java, HTML, CSS, JavaScript, MySQL, GitHub</p> <h4>Description:</h4> <p>Developed a full web-based system to manage all aspects of restaurant reservations (dine-in and delivery). Implemented multi-level access controls for admin, customers, and employees, significantly enhancing operational security and user experience.</p> <h4>Results:</h4> <p>Successfully streamlined the reservation process by enabling the system to generate detailed records in both <strong>PDF and CSV formats</strong>, enhancing operational efficiency.</p> <p><strong>Project Link:</strong> [Add GitHub URL Here]</p>"
+      "detail": "<h4>Technologies Used:</h4> <p>Java, HTML, CSS, JavaScript, MySQL, GitHub</p> <h4>Description:</h4> <p>Developed a full web-based system to manage all aspects of restaurant reservations (dine-in and delivery). Implemented multi-level access controls for admin, customers, and employees, significantly enhancing operational security and user experience.</p> <h4>Results:</h4> <p>Successfully streamlined the reservation process by enabling the system to generate detailed records in both <strong>PDF and CSV formats</strong>, enhancing operational efficiency.</p> <p><strong>Project Link:</strong> https://github.com/Shehanford/restaurant_system</p>"
     },
     {
       "id": "proj-2",
