@@ -6,17 +6,23 @@
   "projects": [
     {
       "id": "proj-1",
-      "title": "Budget Automation Script",
-      "short": "Automates monthly budget consolidation and generates Excel reports.",
-      "detail": "Built Python scripts to parse CSV exports, reconcile budget lines and populate formatted Excel reports for management review. Reduced manual time by ~60%."
+      "title": "Restaurant Management System (Java/Web)",
+      "short": "A comprehensive web-based system for managing dine-in and delivery reservations with robust multi-level access controls.",
+      "detail": "<h4>Technologies Used:</h4> <p>Java, HTML, CSS, JavaScript, MySQL, GitHub</p> <h4>Description:</h4> <p>Developed a full web-based system to manage all aspects of restaurant reservations (dine-in and delivery). Implemented multi-level access controls for admin, customers, and employees, significantly enhancing operational security and user experience.</p> <h4>Results:</h4> <p>Successfully streamlined the reservation process by enabling the system to generate detailed records in both <strong>PDF and CSV formats</strong>, enhancing operational efficiency.</p> <p><strong>Project Link:</strong> [Add GitHub URL Here]</p>"
     },
     {
       "id": "proj-2",
-      "title": "Plant Disease CNN (Research)",
-      "short": "Prototype CNN for plant disease identification using image datasets.",
-      "detail": "Research-stage prototype using convolutional neural networks to classify leaf images. Prepared dataset, trained model, evaluated performance and documented next steps for deployment."
+      "title": "Power Plant Monitoring System (Python)",
+      "short": "A web-based monitoring system for Resus Energy (solar/hydro) to track, analyze, and report daily energy generation data.",
+      "detail": "<h4>Technologies Used:</h4> <p>Python, HTML, CSS, JavaScript, GitHub</p> <h4>Description:</h4> <p>Currently developing a web-based monitoring system for Resus Energy. The system allows plant supervisors to input daily energy generation data, providing managers with real-time analytics on production variations.</p> <h4>Results:</h4> <p>Features like breakdown reporting, data filtering, and downloadable PDF reports are enhancing operational efficiency by providing <strong>real-time insights</strong> into energy generation and maintenance needs across various plants.</p> <p><strong>Project Link:</strong> [Add GitHub URL Here]</p>"
+    },
+    {
+      "id": "proj-3",
+      "title": "Plant Disease Management System (ML/Full-Stack)",
+      "short": "A scalable, cloud-based platform integrating a Machine Learning model for accurate, real-time plant disease classification.",
+      "detail": "<h4>Technologies Used:</h4> <p>Python (Flask), React.js, Firebase, Machine Learning, GitHub</p> <h4>Description:</h4> <p>Built a full-stack web-based platform using React (frontend), Flask (backend), and Firebase (database). The core feature is an integrated machine learning model that classifies plant diseases from image inputs, complete with secure user authentication.</p> <h4>Results:</h4> <p>The system achieved significant improvement in <strong>early disease detection and treatment accuracy</strong>, reducing crop loss through a scalable, multi-user accessible cloud platform.</p> <p><strong>Project Link:</strong> [Add GitHub URL Here]</p>"
     }
-  ],
+],
   "experience": [
     {
       "role": "Associate – Finance & Accounting (F&A)",
