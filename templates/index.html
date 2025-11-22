@@ -44,15 +44,20 @@
         {% for edu in content.education %}
             <div class="timeline-item">
                 <div class="ti-head">
-                    <span class="ti-date">{{ edu.period }}</span>  <div class="ti-title">
+                    <div class="ti-title">
                         <strong>{{ edu.degree }}</strong>
-                        <span class="muted-institution"> • {{ edu.institution }}</span>
+                        
+                        <p class="institution">{{ edu.institution }}</p> 
+                        
+                        <p class="result">{{ edu.details }}</p>
+                    </div>
+                    
+                    <div class="ti-title">
+                        <span class="ti-date">{{ edu.period }}</span>
                     </div>
                 </div>
-                <div class="ti-body">
-                    {{ edu.details }}
+                
                 </div>
-            </div>
         {% endfor %}
     </div>
 </section>
