@@ -37,6 +37,22 @@
   </div>
 </section>
 
+<!-- EDUCATION -->
+<section id="education" class="container section fade">
+  <h3>Education</h3>
+  <div class="timeline">
+    {% for edu in content.education %}
+      <div class="timeline-item">
+        <div class="ti-head">
+          <strong>{{ edu.degree }}</strong> • {{ edu.institution }}
+          <span class="ti-date">{{ edu.period }}</span>
+        </div>
+        <div class="ti-body">{{ edu.details }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
 <!-- PROJECTS -->
 <section id="projects" class="container section fade">
   <h3>Projects</h3>
