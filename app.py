@@ -5,49 +5,49 @@ app = Flask(__name__, static_folder='static', template_folder='templates')
 
 def load_content():
     # Load editable content from data/content.json
-    here = os.path.join(app.root_path, 'data', 'content.json')
+    # Use os.path.dirname(__file__) for robust pathing in deployment
+    here = os.path.join(os.path.dirname(__file__), 'data', 'content.json')
     if os.path.exists(here):
         with open(here, 'r', encoding='utf-8') as f:
             return json.load(f)
-    # fallback (shouldn't be needed)
+    # Fallback content (simplified for brevity)
     return {
-        "name": "Shehan Roshantha",
-        "title": "Associate – F&A | Software Engineering (reading)",
-        "about": "Finance professional with a BBA in Finance and a growing software skillset. Experienced in SAP, Wise Cloud, reconciliations, and month-end processes. I build practical tools to automate accounting workflows and analyze financial data.",
-        "skills": ["Accounting","SAP","Wise Cloud","Python","Flask","Excel","Data Analysis"],
-        "projects": [],
-        "experience": [],
-        "contact": {"email":"shehanrford@gmail.com","phone":"0705246616","location":"Wattala, Sri Lanka","linkedin":"https://linkedin.com/in/shehan-roshantha-90811b312"}
+        "name": "Shehan Ford", 
+        "title": "Developer", 
+        "about": "Fallback content loaded.", 
+        "skills": [], 
+        "projects": [], 
+        "experience": [], 
+        "education": [],
+        "contact": {"email":"default@example.com", "resume_file": "Shehan Ford Resume.pdf"}
     }
 
 CONTENT = load_content()
 
-# Import os if you haven't already
-import os 
-# ... your existing imports ...
-
-# ... CONTENT = load_content() ...
-
-# Security: Used for sessions/cookies. We use an environment variable for deployment.
+# --- Security and Configuration ---
+# Security: Used for sessions/cookies. Set from environment variable.
 app.secret_key = os.environ.get('SECRET_KEY', 'a_temporary_dev_key_for_local_use')
-
+# -----------------------------------
 
 @app.route('/')
 def index():
     return render_template('index.html', content=CONTENT)
 
-# Serve resume (place your PDF at static/Shehan Ford Resume.pdf)
+# Serve resume using the dynamic filename
 @app.route('/resume')
 def resume():
-    return send_from_directory('static', 'Shehan Ford Resume.pdf')
+    # Safely retrieve filename from CONTENT['contact']
+    filename = CONTENT['contact'].get('resume_file', 'Shehan Ford Resume.pdf')
+    # Use app.static_folder for a reliable path
+    return send_from_directory(app.static_folder, filename)
 
-if __name__ == '__main__':
-    app.run(debug=True)
-
-# Custom 404 Error Handler
-from flask import render_template
-
+# Custom 404 Error Handler (Defined before __main__ block)
 @app.errorhandler(404)
 def page_not_found(e):
-    # Pass the content data to the 404 template so it can use the name/contact info in the base template
+    # Pass the content data to the 404 template
     return render_template('404.html', content=CONTENT), 404
+
+if __name__ == '__main__':
+    # Use environment variable to control debug mode
+    is_dev = os.environ.get('FLASK_ENV') == 'development'
+    app.run(debug=is_dev)
