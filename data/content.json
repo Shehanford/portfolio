@@ -3,6 +3,33 @@
   "title": "Senior Associate – F&A | BSc (Hons) Software Engineering ",
   "about": "Results-driven Finance professional holding a BBA (Second Class Upper - 3.58 GPA) and a BSc (Hons) Software Engineering degree (Second-Class Honors). With extensive hands-on experience in financial reporting, ERP systems, and process optimization, I leverage my dual expertise to build and deploy tools that automate complex accounting workflows and drive efficiency. I am currently expanding my technical focus, with a keen interest in applying Data Science and Machine Learning techniques to enhance financial forecasting and risk modeling.",
   "skills": ["Accounting","Financial Reporting","SAP","Wise Cloud","Xero","Python","Flask","Excel","Data Analysis"],
+  
+  "Education": [
+    {
+      "period": "2022 – 2025",
+      "degree": "BSc (Hons) in Software Engineering",
+      "institution": "Cardiff Metropolitan University, UK",
+      "details": "Second Class Upper Division"
+    },
+    {
+      "period": "2021 – 2024",
+      "degree": "Bachelor of Business Administration (BBA) – Finance",
+      "institution": "University of Colombo, Sri Lanka",
+      "details": "Second Class Upper Division | GPA: 3.58"
+    },
+    {
+      "period": "2019",
+      "degree": "G.C.E. Advanced Level – Commerce Stream",
+      "institution": "St. Benedict’s College, Colombo",
+      "details": "Results: Accounting – A, Economics – A, Business Studies – A"
+    },
+    {
+      "period": "2016",
+      "degree": "G.C.E. Ordinary Level",
+      "institution": "St. Benedict’s College, Colombo",
+      "details": "Results: 5As and 4Bs"
+    }
+  ],
   "projects": [
     {
       "id": "proj-1",
