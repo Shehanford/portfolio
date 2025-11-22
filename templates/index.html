@@ -83,9 +83,13 @@
     {% for e in content.experience %}
       <div class="timeline-item">
         <div class="ti-head">
-          <strong>{{ e.role }}</strong> • {{ e.org }}
-          <span class="ti-location">{{ e.location }}</span>
+          <strong>{{ e.role }}</strong> 
+          
           <span class="ti-date">{{ e.date }}</span>
+          
+          <p class="ti-org-loc">
+            {{ e.org }} • {{ e.location }}
+          </p>
         </div>
         
         <div class="ti-body">
