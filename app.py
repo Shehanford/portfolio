@@ -33,3 +33,11 @@ def resume():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+# Custom 404 Error Handler
+from flask import render_template
+
+@app.errorhandler(404)
+def page_not_found(e):
+    # Pass the content data to the 404 template so it can use the name/contact info in the base template
+    return render_template('404.html', content=CONTENT), 404
