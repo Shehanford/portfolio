@@ -22,6 +22,16 @@ def load_content():
 
 CONTENT = load_content()
 
+# Import os if you haven't already
+import os 
+# ... your existing imports ...
+
+# ... CONTENT = load_content() ...
+
+# Security: Used for sessions/cookies. We use an environment variable for deployment.
+app.secret_key = os.environ.get('SECRET_KEY', 'a_temporary_dev_key_for_local_use')
+
+
 @app.route('/')
 def index():
     return render_template('index.html', content=CONTENT)
