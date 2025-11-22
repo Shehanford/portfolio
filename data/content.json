@@ -1,8 +1,8 @@
 {
   "name": "Shehan Ford",
   "title": "Senior Associate – F&A | BSc (Hons) Software Engineering ",
-  "about": "Finance professional with a BBA (Second Class Upper - 3.58 GPA) and hands-on experience in accounting, financial reporting and ERP systems (SAP). Skilled in reconciliations, month-end close, Wise Cloud and process improvements. I combine finance domain knowledge with software skills to automate workflows and build data-driven tools.",
-  "skills": ["Accounting","Financial Reporting","SAP","Wise Cloud","Python","Flask","Excel","Data Analysis"],
+  "about": "Results-driven Finance professional holding a BBA (Second Class Upper - 3.58 GPA) and a **BSc (Hons) Software Engineering degree (Second-Class Honors)**. With extensive hands-on experience in financial reporting, ERP systems (SAP), and process optimization, I leverage my dual expertise to build and deploy tools that automate complex accounting workflows and drive efficiency. I am currently expanding my technical focus, with a keen interest in applying **Data Science and Machine Learning** techniques to enhance financial forecasting and risk modeling.",
+  "skills": ["Accounting","Financial Reporting","SAP","Wise Cloud","Xero","Python","Flask","Excel","Data Analysis"],
   "projects": [
     {
       "id": "proj-1",
