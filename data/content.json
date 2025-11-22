@@ -50,20 +50,46 @@
       "detail": "<h4>Technologies Used:</h4> <p>Python (Flask), React.js, Firebase, Machine Learning, GitHub</p> <h4>Description:</h4> <p>Built a full-stack web-based platform using React (frontend), Flask (backend), and Firebase (database). The core feature is an integrated machine learning model that classifies plant diseases from image inputs, complete with secure user authentication.</p> <h4>Results:</h4> <p>The system achieved significant improvement in <strong>early disease detection and treatment accuracy</strong>, reducing crop loss through a scalable, multi-user accessible cloud platform.</p> <p><strong>Project Link:</strong> https://github.com/Shehanford/model_CI </p>"
     }
 ],
-  "experience": [
+ "experience": [
+    {
+      "role": "Senior F&A (Finance & Accounting)",
+      "org": "Jemojo Accounting Firm",
+      "location": "Western Province, Sri Lanka",
+      "date": "Sep 2025 – Present",
+      "details": [
+        "Financial Operations: Proficiently utilize the Xero accounting platform for end-to-end financial management, including accurate processing and reporting.",
+        "Reconciliation & Reporting: Execute timely and precise bank reconciliations to maintain data integrity and support financial reporting.",
+        "Payroll Management: Oversee all aspects of payroll management for assigned clients, ensuring compliance with relevant regulations and timely disbursements.",
+        "Client Management: Lead the client onboarding process, establishing seamless integration and strong initial working relationships.",
+        "A/P & A/R: Manage the full cycle of accounts payable and receivable, ensuring efficient cash flow management and accurate ledger maintenance.",
+        "Client Communication: Serve as the primary point of contact for Australian clients, maintaining effective daily communication to address queries, provide updates, and ensure service satisfaction across time zones."
+      ]
+    },
     {
       "role": "Associate – Finance & Accounting (F&A)",
       "org": "WNS Global Services",
+      "location": "Colombo, Sri Lanka",
       "date": "Mar 2025 – Present",
-      "details": "Process and validate financial transactions, use Wise Cloud for real-time financial management, support month-end close, and collaborate cross-functionally to improve controls."
+      "details": [
+        "Process and validate financial transactions in compliance with internal policies and client-specific guidelines.",
+        "Utilize Wise Cloud platform for real-time financial data management, supporting accurate forecasting and budgeting.",
+        "Collaborate with cross-functional teams to resolve discrepancies, improving overall process efficiency.",
+        "Maintain detailed financial documentation aligned with internal controls and compliance requirements."
+      ]
     },
     {
       "role": "Finance Trainee",
       "org": "Resus Energy PLC",
+      "location": "Colombo 07, Sri Lanka",
       "date": "Aug 2024 – Feb 2025",
-      "details": "Managed payments, used SAP for recording transactions, assisted with reconciliations and month-end processes."
+      "details": [
+        "Managed payment handling and planning, ensuring timely transaction processing in line with financial policies.",
+        "Used SAP to record financial data and generate accurate reports, enhancing reporting efficiency.",
+        "Assisted in preparing and reconciling financial statements, ensuring compliance with accounting standards.",
+        "Supported month-end closing by preparing journal entries and maintaining financial records."
+      ]
     }
-  ],
+],
   "contact": {
     "email": "shehanrford@gmail.com",
     "phone": "+947705246616",
