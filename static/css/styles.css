@@ -80,10 +80,42 @@
   .fade{opacity:0;transform:translateY(24px);transition:all .7s cubic-bezier(.2,.9,.2,1)}
   .fade.show{opacity:1;transform:none}
   
-  /* Responsive */
-  @media (max-width:880px){
-    .hero-grid{grid-template-columns:1fr;gap:18px;text-align:center}
-    .brand-avatar{width:48px;height:48px}
-    .contact-grid{grid-template-columns:1fr}
-  }
+  /* Responsive Styles for Phones */
+@media (max-width:880px){
+    /* Hero: Stacks the image and text vertically */
+    .hero-grid{
+        grid-template-columns:1fr; /* Changes to a single column */
+        gap:18px;
+        text-align:center;
+    }
+    
+    /* Mobile Navigation Fix (Optional) */
+    .nav {
+        display: none; /* Hide for simplicity, or modify for stacking */
+        /* If you prefer stacking, use:
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        */
+    }
+    /* Contact: Stacks the form and contact card vertically */
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Small adjustments for mobile */
+    .brand-avatar{
+        width:48px;
+        height:48px;
+    }
+
+    /* Add this for cleaner look on small screens */
+    .hero-card {
+        padding-top: 20px;
+    }
+    .hero-pic {
+        width: 250px;
+        height: 250px;
+    }
+}
   
